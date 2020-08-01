@@ -8,8 +8,13 @@ module.exports = {
     printEntry: './src/print.js'
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false
+    }),
     new HtmlWebpackPlugin({
       title: '管理输出呀！！'
     }),

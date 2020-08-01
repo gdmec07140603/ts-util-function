@@ -5,8 +5,8 @@ function component() {
     const element = document.createElement('div');
     const btn = document.createElement('button');
     // lodash（目前通过一个 script 引入）对于执行这一行是必需的
-    element.innerHTML = _.join(['Hello', 'webpack哈哈哈'], ' ');
-    btn.innerHTML = '点击这里'
+    element.innerHTML = _.join(['Hello', 'webpack哈'], ' ');
+    btn.innerHTML = '点击这里1'
     btn.onclick = printMe
     element.appendChild(btn)
     return element;
