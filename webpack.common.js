@@ -1,15 +1,14 @@
 const path = require('path');
+// 创键html的插件，并自动导入bundle.js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// 清理dist目录
 const {CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     appEntry: './src/index.js',
     printEntry: './src/print.js'
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin({
@@ -17,7 +16,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: '管理输出呀！！'
-    }),
+    })
   ],
   output: {
     filename: '[name].bundle.js',
