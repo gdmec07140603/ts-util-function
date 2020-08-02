@@ -17,7 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.19",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
@@ -25,6 +26,7 @@
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
